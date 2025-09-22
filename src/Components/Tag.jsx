@@ -13,7 +13,8 @@ function Tag(){
                 (<img src={gif} className="gif-image"/>)
             }
             <input className="tag-input" 
-            onChange={(event)=>setTag(event.target.value)} value={tag}/>
+            onChange={(event)=>setTag(event.target.value)} 
+            value={tag} placeholder="Your Choice of Gif"/>
             <button onClick={()=>fetchData(tag)} 
             className="btn-generate">
                 Generate

@@ -12,7 +12,7 @@ function Tag(){
                 loading?(<Spinner/>):
                 (<img src={gif} className="gif-image"/>)
             }
-            <input className="tag-input" 
+            <input type="text" className="tag-input" 
             onChange={(event)=>setTag(event.target.value)} 
             value={tag} placeholder="Your Choice of Gif"/>
             <button onClick={()=>fetchData(tag)} 
